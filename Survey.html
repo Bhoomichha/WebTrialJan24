@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles1.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Genshin Impact Survey Form</h1>
+    <p id="description">Please share your views and opinions to help us improve our gaming environment.</p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name-label" id="name-label">Name
+      <input id="name" required type="text" placeholder="Enter your name">
+      </label>
+      <label for="email-label" id="email-label">Email
+      <input id="email" required type="email" placeholder="example@gmail.com">
+      </label>
+      <label for="number-label" id="number-label">Age
+      <input id="number" type="number" min="17" max="100" placeholder="Your age">
+      <label for="elements">What is your favorite element?
+      <select id="dropdown">
+        <option value="">(Select one)</option>
+        <option value="a">Anemo</option>
+        <option value="g">Geo</option>
+        <option value="e">Electro</option>
+        <option value="d">Dendro</option>
+        <option value="h">Hydro</option>
+        <option value="p">Pyro</option>        
+        <option value="c">Cyro</option>
+      </select>
+      </label>
+      <div class="left" for="device">What device do you use to play Genshin Impact?
+        <label for="ph">
+        <input class="device" type="radio" name="device" value="ph" id="ph">Mobile
+      </label>
+      <label for="pc">
+        <input type="radio" name="device" value="pc" id="pc">PC
+      </label>
+      <label for="both">
+        <input type="radio" name="device" value="both" id="both">Both
+      </label>
+    </div>
+      <label for="region"> What is your favourite region or arc? 
+        <select id="region">
+          <option value="">(select one)</option>
+          <option value="su">Sumeru</option>
+          <option value="li">Liyue</option>
+          <option value="in">Inazuma</option>
+          <option value="mon">Mondstadt</option>
+          <option value="fo">Fontaine</option>  
+          </select>
+          <label for="platforms">
+            What platforms have you followed us on?:
+            <input type="checkbox" value="ig" id="ig" name="platforms" /><label
+              for="ig"
+              >Instagram</label
+            >
+            <input type="checkbox" value="fb" id="fb" name="platforms" /><label
+              for="fb"
+              >Facebook</label
+            >
+            <input type="checkbox" value="tkt" id="tkt" name="platforms" /><label
+              for="tkt"
+              >Tiktok</label
+            >
+          </label>
+          <label for="comments">Help us improve more by writing some suggestions and comments: <textarea for="comments" name="comments" rows="6" cols="20" ></textarea>
+                <input id="submit" type="submit" value="Submit" />
+          </fieldset>
+     
+    </form>
+  </body>
+</html>
